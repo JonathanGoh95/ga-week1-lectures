@@ -1,0 +1,41 @@
+h1 {
+    color: orange;
+    text-align: center;
+}
+
+body{
+    margin: 0;
+    background-color: lightgray;
+}
+
+ul{
+    margin: 0;
+}
+
+div{
+    color:blue;
+}
+
+#about{
+    color: red;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+p{
+    color: purple;
+}
+
+button{
+    padding: 10px;
+}
+
+.important{
+    color:red;
+    font-weight: bold;
+}
+
+.super-cool{
+    border: 2px solid pink;
+    
+}
