@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: gray;
+  margin: 0;
+  font-family: "Tagesschrift", "Montserrat", Helvetica, Tahoma, Verdana,
+    sans-serif;
+  /* font-weight: bold; */
+  font-style: italic;
+  min-height: 100dvh;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+.top-level-list:hover {
+  cursor: pointer;
+}
+
+.top-level-list > li {
+  border: solid 1px orange;
+}
+
+#comments-title::first-letter {
+  font-size: 60px;
+}
+
+#name:focus,
+#year:focus {
+  border: 4px solid green;
+}

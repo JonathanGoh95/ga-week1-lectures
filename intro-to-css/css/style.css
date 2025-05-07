@@ -1,41 +1,40 @@
 h1 {
-    color: orange;
-    text-align: center;
+  color: orange;
+  text-align: center;
 }
 
-body{
-    margin: 0;
-    background-color: lightgray;
+body {
+  margin: 0;
+  background-color: lightgray;
 }
 
-ul{
-    margin: 0;
+ul {
+  margin: 0;
 }
 
-div{
-    color:blue;
+div {
+  color: blue;
 }
 
-#about{
-    color: red;
-    font-weight: bold;
-    text-decoration: underline;
+#about {
+  color: red;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
-p{
-    color: purple;
+p {
+  color: purple;
 }
 
-button{
-    padding: 10px;
+button {
+  padding: 10px;
 }
 
-.important{
-    color:red;
-    font-weight: bold;
+.important {
+  color: red;
+  font-weight: bold;
 }
 
-.super-cool{
-    border: 2px solid pink;
-    
+.super-cool {
+  border: 2px solid pink;
 }
