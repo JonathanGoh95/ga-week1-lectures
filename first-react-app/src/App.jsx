@@ -12,12 +12,12 @@ const todos = [
   ];
 
 // Using the 'map' array iterator to loop through the array elements in React
-const todoList = todos.map((todo,index)=><li key={index}>{todo.done? `Task Completed: ${todo.text}` : `Task Not Yet Completed: ${todo.text}`}</li>);
+const todoList = todos.map((todo)=><li key={todo.text}>{todo.done? `Task Completed: ${todo.text}` : `Task Not Yet Completed: ${todo.text}`}</li>);
 
 return (
     <>
       <h1 className="testClass">Javascript in JSX</h1>
-      {/* Only ternary expressions can be rendered within {}. If...else statements will NOT work.*/}
+      {/* Only ternary expressions can be rendered within {}. If...else statements will NOT work within 'return'.*/}
       
       <h2>Conditional Rendering</h2>
       <p>{todo.done? `Task Completed: ${todo.text}`: todo.text}</p>
