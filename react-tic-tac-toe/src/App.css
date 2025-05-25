@@ -18,3 +18,14 @@ button {
   font-size: 48px;
   padding: 20px;
 }
+
+#description {
+  font-size: 18px;
+  height: 100px;
+  width: 200px;
+}
+
+#descriptionList {
+  text-align: center;
+  margin: 20px;
+}
