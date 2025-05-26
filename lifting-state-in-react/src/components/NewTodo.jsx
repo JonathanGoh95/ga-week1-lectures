@@ -2,11 +2,11 @@
 
 import { useState } from "react";
 
-const NewTodo = (props) => {
+const NewTodo = ({addTodo}) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     // console.log("Creating a new to-do...");
-    props.addTodo(newTodo);
+    addTodo(newTodo);
     setNewTodo('');
   };
 

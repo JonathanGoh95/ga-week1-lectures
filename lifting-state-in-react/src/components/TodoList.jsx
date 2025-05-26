@@ -1,10 +1,10 @@
 // src/components/TodoList.jsx
 
-const TodoList = (props) => {
+const TodoList = ({todos}) => {
 //   const tempTodos = ['first', 'second', 'third'];
   return (
     <ul>
-      {props.todos.map((todo, index) => {
+      {todos.map((todo, index) => {
         return <li key={index}>{todo}</li>;
       })}
     </ul>

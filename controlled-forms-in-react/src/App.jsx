@@ -2,6 +2,13 @@
 
 import { useState } from 'react';
 import './App.css'
+import debug from 'debug'
+
+const log = debug("forms:*")
+
+log("Hello World")
+
+localStorage.debug = "forms:*"
 
 const App = () => {
   // const [cityInput,setCityInput] = useState('');
