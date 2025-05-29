@@ -1,0 +1,28 @@
+{
+  "pets": [
+    {
+      "name": "Fluffy",
+      "breed": "Cat",
+      "age": 3,
+      "id": "4ee7"
+    },
+    {
+      "name": "Sparky",
+      "breed": "Dog",
+      "age": 2,
+      "id": "9a02"
+    },
+    {
+      "name": "Tiny",
+      "breed": "Hamster",
+      "age": 1,
+      "id": "d3ba"
+    },
+    {
+      "name": "Big",
+      "breed": "Bird",
+      "age": 35,
+      "id": "12bb"
+    }
+  ]
+}

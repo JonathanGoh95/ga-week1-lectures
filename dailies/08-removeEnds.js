@@ -22,5 +22,5 @@ const removeEnds = (str) => {
   return str.slice(1, -1);
 };
 
-removeEnds("SEB Rocks!");
-removeEnds("a");
+console.log(removeEnds("SEB Rocks!"));
+console.log(removeEnds("a"));
