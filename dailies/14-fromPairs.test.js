@@ -1,5 +1,5 @@
 import { expect, test, describe } from "bun:test";
-import { fromPairs } from "./28may2025";
+import { fromPairs } from "./14-fromPairs";
 
 describe("fromPairs", () => {
   test("abc test", () => {
