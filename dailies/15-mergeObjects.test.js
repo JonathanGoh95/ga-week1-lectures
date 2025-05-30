@@ -1,39 +1,35 @@
 import { expect, test, describe } from "bun:test";
-import { fromPairs } from "./14-fromPairs";
+import { mergeObjects } from "./15-mergeObjects";
 
-describe("14-fromPairs", () => {
-  test("abc Test", () => {
+describe("15-mergeObjects", () => {
+  test("Number of Objects less than 2", () => {
     // 3 steps of testing
     // Arrange - If I need to do some setup prior to Act
     // Act - Call the function that we are testing
-    const result = fromPairs([
-      ["a", 1],
-      ["b", 2],
-      ["c", 3],
-    ]);
+    const result = mergeObjects([{ a: 1, b: 2, c: 3 }]);
     // Assert - Determine what the input and expected outputs are
-    expect(result).toEqual({ a: 1, b: 2, c: 3 });
+    expect(result).toEqual("The number of objects is less than 2");
   });
 
-  test("Keys with Values", () => {
+  test("2 Objects", () => {
     // 3 steps of testing
     // Arrange - If I need to do some setup prior to Act
     // Act - Call the function that we are testing
-    const result = fromPairs([
-      ["name", "Sam"],
-      ["age", 24],
-      ["name", "Sally"],
-    ]);
+    const result = mergeObjects({ a: 1, b: 2, c: 3 }, { d: 4 });
     // Assert - Determine what the input and expected outputs are
-    expect(result).toEqual({ name: "Sally", age: 24 });
+    expect(result).toEqual({ a: 1, b: 2, c: 3, d: 4 });
   });
 
-  test("Enpty Array", () => {
+  test("Multiple Objects", () => {
     // 3 steps of testing
     // Arrange - If I need to do some setup prior to Act
     // Act - Call the function that we are testing
-    const result = fromPairs([]);
+    const result = mergeObjects(
+      { a: 1, b: 2, c: 3 },
+      { d: 4 },
+      { b: 22, d: 44 }
+    );
     // Assert - Determine what the input and expected outputs are
-    expect(result).toEqual({});
+    expect(result).toEqual({ a: 1, b: 22, c: 3, d: 44 });
   });
 });
