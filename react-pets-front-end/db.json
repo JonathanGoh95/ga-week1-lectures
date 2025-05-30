@@ -21,7 +21,7 @@
     {
       "name": "Big",
       "breed": "Bird",
-      "age": 35,
+      "age": "40",
       "id": "12bb"
     }
   ]
