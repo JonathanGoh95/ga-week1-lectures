@@ -20,7 +20,7 @@ mumble('121') //=> '1-22-111'
 mumble('!A 2') //=> '!-AA-   -2222'
 -----------------------------------------------------------------------------*/
 // Your solution for 13-mumble here:
-const mumble = (str) => {
+export const mumble = (str) => {
   let output = str[0]; // Declare the output variable with the first character from the string argument
   for (let i = 1; i < str.length; i++) {
     output += "-"; // Separate each character with a '-'

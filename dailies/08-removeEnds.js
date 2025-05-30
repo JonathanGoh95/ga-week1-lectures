@@ -15,7 +15,7 @@ removeEnds('SEB Rocks!') //=> "EB Rocks"
 removeEnds('a') //=> "" (empty string)
 -----------------------------------------------------------------------------*/
 // Your solution for 08-removeEnds here:
-const removeEnds = (str) => {
+export const removeEnds = (str) => {
   if (str.length < 3) {
     return "";
   }

@@ -14,7 +14,10 @@ addOne(1) //=> 2
 addOne(-5) //=> -4
 -----------------------------------------------------------------------------*/
 // Your solution for 01-addOne here:
-const addOne = (num) => {
+export const addOne = (num) => {
+  if (typeof num !== "number" || isNaN(num)) {
+    return "Please input a value.";
+  }
   return num + 1;
 };
 

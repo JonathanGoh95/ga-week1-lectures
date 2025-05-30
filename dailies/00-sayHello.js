@@ -12,8 +12,9 @@ Examples:
 sayHello() //=> Hello!
 -----------------------------------------------------------------------------*/
 // Your solution for 00-sayHello (example) here:
-const sayHello = function (greeting = "Hello") {
+export const sayHello = function (greeting = "Hello") {
   return `${greeting}!`;
 };
 
+console.log(sayHello());
 console.log(sayHello("What's up"));

@@ -17,7 +17,7 @@ addList(1,50,1.23) //=> 52.23
 addList(7,-12) //=> -5
 -----------------------------------------------------------------------------*/
 // Your solution for 04-addList here:
-const addList = (...nums) => {
+export const addList = (...nums) => {
   if (nums.length === 0) {
     return 0;
   }

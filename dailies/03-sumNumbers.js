@@ -17,7 +17,7 @@ sumNumbers([2, 10, -5]) //=> 7
 sumNumbers([]) //=> 0
 -----------------------------------------------------------------------------*/
 // Your solution for 03-sumNumbers here:
-const sumNumbers = (arr) => {
+export const sumNumbers = (arr) => {
   if (arr.length === 0) {
     return 0;
   }

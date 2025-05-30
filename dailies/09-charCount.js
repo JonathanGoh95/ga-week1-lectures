@@ -35,7 +35,7 @@ charCount('Today is fantastic!')
 }
 -----------------------------------------------------------------------------*/
 // Your solution for 09-charCount here:
-const charCount = (str) => {
+export const charCount = (str) => {
   let output = {};
   for (let i = 0; i < str.length; i++) {
     if (!output[str[i]]) {

@@ -15,7 +15,10 @@ Examples:
 reverseUpcaseString("SEI Rocks!") //=> "!SKCOR IES" 
 -----------------------------------------------------------------------------*/
 // Your solution for 07-reverseUpcaseString here:
-const reverseUpcaseString = (str) => {
+export const reverseUpcaseString = (str) => {
+  if (str === "") {
+    return "Please enter a string.";
+  }
   return [...str].reverse().join("").toUpperCase();
 };
 

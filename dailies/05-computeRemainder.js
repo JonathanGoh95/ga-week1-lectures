@@ -20,7 +20,7 @@ computeRemainder(4,0) //=> Infinity
 computeRemainder(10.5, 3) //=> 1.5
 -----------------------------------------------------------------------------*/
 // Your solution for 05-computeRemainder here:
-const computeRemainder = (dividend, divisor) => {
+export const computeRemainder = (dividend, divisor) => {
   return divisor === 0
     ? Infinity
     : dividend - Math.floor(dividend / divisor) * divisor;

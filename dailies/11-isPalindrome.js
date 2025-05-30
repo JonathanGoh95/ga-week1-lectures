@@ -27,7 +27,7 @@ isPalindrome('') //=> true
  * @returns
  */
 
-const isPalindrome = (str) => {
+export const isPalindrome = (str) => {
   if (str.length <= 1) {
     return true;
   }

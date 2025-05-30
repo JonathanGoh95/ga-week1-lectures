@@ -23,7 +23,7 @@ formatWithPadding(42, '*', 10) //=> "********42"
 formatWithPadding(1234, '*', 3) //=> "1234"
 -----------------------------------------------------------------------------*/
 // Your solution for 10-formatWithPadding here:
-const formatWithPadding = (num1, str, num2) => {
+export const formatWithPadding = (num1, str, num2) => {
   //Convert num1 to String
   num1 = String(num1);
   //Find the number of characters needed to 'pad' the left of num1.

@@ -23,7 +23,7 @@ mergeObjects({a: 1, b: 2, c: 3}, {d: 4}, {b: 22, d: 44})
 //=> {a: 1, b: 22, c: 3, d: 44}
 -----------------------------------------------------------------------------*/
 // Your solution for 15-mergeObjects here:
-const mergeObjects = (...objs) => {
+export const mergeObjects = (...objs) => {
   if (objs.length < 2) {
     return "The number of objects is less than 2";
   }
