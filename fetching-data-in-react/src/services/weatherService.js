@@ -1,6 +1,7 @@
 // src/services/weatherService.js
-const API_KEY = "445b83e1f6e44be383650705252705";
-const BASE_URL = `http://api.weatherapi.com/v1/current.json?key=${API_KEY}`;
+const BASE_URL = `http://api.weatherapi.com/v1/current.json?key=${
+  import.meta.env.VITE_API_KEY
+}`;
 
 const show = async (city) => {
   try {
