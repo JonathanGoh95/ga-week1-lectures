@@ -1,0 +1,23 @@
+meta {
+  name: Edit-Pet
+  type: http
+  seq: 7
+}
+
+put {
+  url: http://localhost:3000/pets/:petId
+  body: json
+  auth: inherit
+}
+
+params:path {
+  petId: 6287
+}
+
+body:json {
+  {
+    "name": "AAA",
+    "breed": "Hamster",
+    "age": 1
+  }
+}
