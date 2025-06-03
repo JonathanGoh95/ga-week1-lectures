@@ -31,8 +31,12 @@ mapArray( ['rose', 'tulip', 'daisy'], function(f, i) {
 //=> ["1 - rose", "2 - tulip", "3 - daisy"]
 -----------------------------------------------------------------------------*/
 // Your solution for 17-mapArray here:
-export const mapArray = (arr, funcName) => {
-  return arr.map((elem, idx) => funcName(elem, idx));
+export const mapArray = (arr, func) => {
+  let output = [];
+  for (let i = 0; i < arr.length; i++) {
+    output.push(func(arr[i], i));
+  }
+  return output;
 };
 
 console.log(
