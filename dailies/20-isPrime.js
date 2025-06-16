@@ -44,3 +44,5 @@ console.log(isPrime(29));
 console.log(isPrime(16));
 console.log(isPrime(211));
 console.log(isPrime(200));
+console.log(isPrime(1229));
+console.log(isPrime(4393139));
