@@ -1,6 +1,6 @@
 // middleware/verify-token.js
 
-// We'll need to import jwt to use the verify method
+// Import JWT to use the verify method
 const jwt = require("jsonwebtoken");
 
 function verifyToken(req, res, next) {
@@ -19,5 +19,5 @@ function verifyToken(req, res, next) {
   }
 }
 
-// We'll need to export this function to use it in our controller files
+// Export this function to use it in controller files
 module.exports = verifyToken;
