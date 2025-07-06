@@ -1,0 +1,15 @@
+meta {
+  name: JWT Verification
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:5000/verify-token
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ0ZXN0IiwicGFzc3dvcmQiOiJ0ZXN0In0.-Da67KU8CR7D22nN_4pM-eeUpvFZEFRzTLnAGR-7vr0
+}
