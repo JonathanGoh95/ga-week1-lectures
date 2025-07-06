@@ -1,4 +1,4 @@
-// middleware/verify-token.js
+// middleware/verify-token.js (Will contain a next param to call the next middleware function)
 
 // Import JWT to use the verify method
 const jwt = require("jsonwebtoken");

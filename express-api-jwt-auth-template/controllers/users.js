@@ -6,6 +6,7 @@ const verifyToken = require("../middleware/verify-token");
 
 const User = require("../models/user");
 
+// verifyToken middleware is ran before the subsequent function is executed
 router.get("/", verifyToken, async (req, res) => {
   try {
     // Get a list of all users, but only return their username and _id
@@ -17,6 +18,7 @@ router.get("/", verifyToken, async (req, res) => {
   }
 });
 
+// verifyToken middleware is ran before the subsequent function is executed. User can only see their own profile, and not other users.
 router.get("/:userId", verifyToken, async (req, res) => {
   try {
     // If the user is looking for the details of another user, block the request
