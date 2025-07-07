@@ -32,7 +32,7 @@ import bcrypt
 # For managing database connections
 import psycopg2, psycopg2.extras
 
-# Initialize Flask
+# Initialize Flask (Mandatory)
 # We'll use the pre-defined global '__name__' variable to tell Flask where it is.
 app = Flask(__name__)
 
@@ -171,4 +171,5 @@ def user_index(user_id):
     return jsonify(user), 200
 
 # Run our application, by default on port 5000
-app.run()
+if __name__ == "__main__":
+    app.run()
