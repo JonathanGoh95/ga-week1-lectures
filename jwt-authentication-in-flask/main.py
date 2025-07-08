@@ -172,4 +172,4 @@ def user_index(user_id):
 
 # Run our application, by default on port 5000
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
