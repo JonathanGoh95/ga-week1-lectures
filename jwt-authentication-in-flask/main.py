@@ -95,6 +95,7 @@ def sign_up():
     try:
         new_user_data = request.get_json()
         connection = get_db_connection()
+        # Converts database into an Array of Objects, instead of an Array of Array
         cursor = connection.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
         cursor.execute("SELECT * FROM users WHERE username = %s;", (new_user_data["username"],))
         existing_user = cursor.fetchone()
@@ -120,6 +121,7 @@ def sign_in():
     try:
         sign_in_form_data = request.get_json()
         connection = get_db_connection()
+        # Converts database into an Array of Objects, instead of an Array of Array
         cursor = connection.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
         cursor.execute("SELECT * FROM users WHERE username = %s;", (sign_in_form_data["username"],))
         existing_user = cursor.fetchone()

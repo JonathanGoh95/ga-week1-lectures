@@ -1,0 +1,23 @@
+meta {
+  name: Test POST
+  type: http
+  seq: 9
+}
+
+post {
+  url: http://localhost:3000/calculator?operation=multiply&next=true
+  body: json
+  auth: inherit
+}
+
+params:query {
+  operation: multiply
+  next: true
+}
+
+body:json {
+  {
+    "number": 5,
+    "operation": "add"
+  }
+}

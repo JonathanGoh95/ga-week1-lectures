@@ -1,0 +1,19 @@
+meta {
+  name: Add-Pet
+  type: http
+  seq: 5
+}
+
+post {
+  url: http://localhost:3000/pets
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "Big",
+    "breed": "Bird",
+    "age": 30
+  }
+}

@@ -1,0 +1,15 @@
+meta {
+  name: One-Pet copy
+  type: http
+  seq: 4
+}
+
+get {
+  url: http://localhost:3000/pets/:petsId/
+  body: none
+  auth: inherit
+}
+
+params:path {
+  petsId: 1234
+}
